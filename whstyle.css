@@ -1,0 +1,157 @@
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 600px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+	
+} 
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 100px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 100px;
+}
+a:nth-child(5) {
+	width: 100px;
+}
+a:nth-child(6) {
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0px;
+	background-color: #1abc27;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 100px;
+	left: 100px;
+	background-color: #f31800;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 200px;
+	background-color: #1abc27;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 100px;
+	left: 300px;
+	background-color: #f31800;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 100px;
+	left: 400px;
+	background-color: #1abc27;
+}
+nav .start-contact, a:nth-child(6):hover~.animation {
+	width: 100px;
+	left: 500px;
+	background-color: #f31800;
+}
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #000000;
+    overflow-y: scroll;
+overflow-x: hidden;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 60px;
+	color: #00add8;
+	text-shadow: 2px 2px 4px #000000;
+        color: #FFFFFF;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+p {
+    /* position: absolute; */
+    /* text-align: center; */
+    color: #ecf0f1;
+    /* font-family: 'Cherry Swash',cursive; */
+    font-size: 16px;
+    /*  padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%; */ 
+    /* text-align: center; */
+
+}
+
+a:link { text-decoration: none; }
+a { color: white; }
+
+
+#wrap {
+    width:900px;
+    margin:10px auto;
+    background:rgb(0, 0, 0);
+    border:1px solid #000;
+
+}
+#nav { 
+    width:900px;
+    margin:0;
+    padding:5px 0;
+    text-align:center;/*center the list items*/
+    list-style:none;
+    background:#1abc27;
+    border-bottom:1px solid #000;
+    border-radius: 25px;
+
+}    
+#nav li {
+    display: -moz-inline-box;/* for FF2 (inline-box must be used for shrink wrapping)*/
+    display:inline-block;/* for modern browsers */
+}
+* html #nav li {display:inline;}/* inline-block trigger for IE6 */
+*+html #nav li {display:inline;}/* inline-block trigger for IE7 */
+
+#nav li a {
+    display:inline-block;/*IE6/7 need this (haslayout)*/
+    padding:5px 10px;
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+}
+#nav li a:hover {
+    background:#FFF;
+    color:#000;
+}
+#nav li a img {
+    border:none;
+    margin:10px 0 0;
+}
